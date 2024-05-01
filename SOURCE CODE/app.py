@@ -25,7 +25,7 @@ verbose_name = {
 
 
 
-model = load_model('D:\ML Projects\ Skin Cancer Prediction\SOURCE CODE\model\skin.h5')
+model = load_model('D:\ Skin Cancer Prediction\SOURCE CODE\model\skin.h5')
 
 def predict_label(img_path):
 	test_image = image.load_img(img_path, target_size=(28,28))
