@@ -41,7 +41,7 @@ This project was a collaborative effort by a team of dedicated individuals, incl
 - [AmulGupta](https://github.com/Amulgupta)
 - [Sanskriti](https://github.com/SanskritiHub)
 - [Sanskar Sinha](https://github.com/sanskar9067)
-- [AbhishekKumar4543](https://github.com/AbhishekKumar4543)
+- [Abhishek Kumar](https://github.com/AbhishekKumar4543)
 
 ## Requirements
 
