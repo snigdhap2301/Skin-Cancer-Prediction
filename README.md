@@ -1,6 +1,6 @@
 # Skin Cancer Prediction
 
-This project aims to develop a machine learning model for predicting skin cancer based on image data. Inspired by the research paper titled "Skin Cancer Prediction Using Deep Learning Techniques", our project builds upon the techniques proposed in the paper to create a predictive system with practical applications.
+This project aims to develop a machine-learning model based on image data to predict skin cancer. Inspired by the research paper titled "Skin Cancer Prediction Using Deep Learning Techniques", our project builds upon the proposed techniques to create a predictive system with practical applications.
 
 ## Dataset
 
@@ -30,7 +30,7 @@ To utilize the skin cancer prediction system, ensure all dependencies listed in 
 
 ## Accuracy
 
-Through model training and evaluation, we achieved an accuracy of 97.56% in predicting skin cancer. This high level of accuracy demonstrates the effectiveness of our predictive model in identifying potential instances of skin cancer.
+Through model training and evaluation, we achieved an accuracy of 97.56% in predicting skin cancer. This high level of accuracy demonstrates our predictive model's effectiveness in identifying potential skin cancer instances.
 
 ## Contributors
 
@@ -42,6 +42,7 @@ This project was a collaborative effort by a team of dedicated individuals, incl
 - [Sanskriti](https://github.com/SanskritiHub)
 - [Sanskar Sinha](https://github.com/sanskar9067)
 - [Abhishek Kumar](https://github.com/AbhishekKumar4543)
+- [Aviral Pandey](https://github.com/Aviralpandey26)
 
 ## Requirements
 
@@ -56,8 +57,8 @@ pip install numpy==1.23.5
 pip install tensorflow==2.12.0
 ```
 
-Make sure to replace `pip install` with `pip3 install` if you're using Python 3.x.
+Make sure to replace `pip install` with `pip3 install` if you're using Python 3. x.
 
 ### Base Paper
 
-The inspiration for our project and the base paper we referred to was "Skin Cancer Prediction Using Deep Learning Techniques". You can find the paper [here](https://ieeexplore.ieee.org/abstract/document/10126035/authors#authors).
+The inspiration for our project and the base paper we referred to as "Skin Cancer Prediction Using Deep Learning Techniques". You can find the paper [here](https://ieeexplore.ieee.org/abstract/document/10126035/authors#authors).
