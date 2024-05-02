@@ -37,8 +37,10 @@ Through model training and evaluation, we achieved an accuracy of 97.56% in pred
 This project was a collaborative effort by a team of dedicated individuals, including:
 
 - [Ansh Prakash](https://github.com/anshprakash6397)
-- [Tanisha Chandani](github.com/tanishachandani)
-- 
+- [Tanisha Chandani](https://github.com/tanishachandani)
+- [AmulGupta](https://github.com/Amulgupta)
+- [Sanskriti](https://github.com/SanskritiHub)
+- [Sanskar Sinha](https://github.com/sanskar9067)
 
 
 ## Requirements
