@@ -25,7 +25,7 @@ verbose_name = {
 
 
 
-model = load_model('D:\ Skin Cancer Prediction\SOURCE CODE\model\skin.h5')
+model = load_model('D:\Skin Cancer Prediction\SOURCE CODE\model\skin.h5')
 
 def predict_label(img_path):
 	test_image = image.load_img(img_path, target_size=(28,28))
@@ -57,7 +57,7 @@ def get_output():
 	if request.method == 'POST':
 		img = request.files['my_image']
 
-		img_path = "static/tests/" + img.filename	
+		img_path = "D:/Skin Cancer Prediction/SOURCE CODE/static/tests/" + img.filename	
 		img.save(img_path)
 
 		predict_result = predict_label(img_path)

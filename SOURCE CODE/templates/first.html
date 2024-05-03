@@ -27,25 +27,24 @@
   <!-- Template Main CSS File -->
   <link href="../static/assets/css/styles.css" rel="stylesheet">
 
-
+  
 </head>
 
 <body>
 
- 
+  
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex justify-content-between">
 
       <div class="logo">
         <h1 class="text-light"><a href="index.html">Skin Cancer</a></h1>
-       
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="first.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="login.html">Login</a></li>
+          <li><a class="nav-link scrollto active" href="{{ url_for('first')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('login')}}">Login</a></li>
     
            
         </ul>
@@ -58,42 +57,23 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
-      <h1>Skin Cancer Prediction Using  </h1>
+      <h1>Skin Cancer Prediction Using </h1>
       <h2>Deep Learning 
         Techniques</h2>
      
     </div>
-  </section><!-- End Hero -->
-
-   
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-
-      <div class="container">
-
-        
-
-      </div>
-    </div>
-
-    <div class="container footer-bottom clearfix">
-       
-      </div>
-    </div>
-  </footer><!-- End Footer -->
+  </section> 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  
+  <script src="../static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="../static/assets/vendor/aos/aos.js"></script>
   <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="../static/assets/js/main.js"></script>

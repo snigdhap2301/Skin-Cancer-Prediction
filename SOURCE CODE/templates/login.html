@@ -10,9 +10,6 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
- 
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -27,12 +24,12 @@
   <!-- Template Main CSS File -->
   <link href="../static/assets/css/login.css" rel="stylesheet">
 
-
+  
 </head>
 
 <body>
 
-   
+  
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
@@ -40,13 +37,13 @@
 
       <div class="logo">
         <h1 class="text-light"><a href="index.html">Skin Cancer</a></h1>
-     
+        
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="first.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="login.html">Login</a></li>
+          <li><a class="nav-link scrollto active" href="{{ url_for('first')}}">Home</a></li>
+          <li><a class="nav-link scrollto" href="{{ url_for('login')}}">Login</a></li>
          
         
         </ul>
@@ -66,10 +63,6 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
-    <!-- ======= About Section ======= -->
-     
-    <!-- ======= Cta Section ======= -->
      
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -105,7 +98,7 @@
      {
        alert("Login Success!");
        
-       window.location = "index.html";
+       window.location = "{{url_for('index')}}";
        return false;
      }
      else
@@ -129,7 +122,6 @@
  
    <!-- Portfolio Section -->
    <section class="page-section portfolio" id="portfolio">
-
        <!-- Portfolio Grid Items -->
        <div class="row">
         <div class="section-header">
@@ -194,8 +186,6 @@
 
       </div>
     </section><!-- End Portfolio Section -->
-
-    <!-- ======= Team Section ======= -->
      
   <footer id="footer">
 
