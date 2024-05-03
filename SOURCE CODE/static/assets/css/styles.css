@@ -6,11 +6,11 @@ body {
 a {
   text-decoration: none;
   color: #8fc04e;
+  transition: color 0.3s ease;
 }
 
 a:hover {
   color: #a7cd74;
-  text-decoration: none;
 }
 
 h1,
@@ -22,7 +22,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
@@ -32,7 +31,6 @@ h6 {
   }
 }
 
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -40,7 +38,6 @@ h6 {
   height: 70px;
   transition: all 0.5s;
   z-index: 997;
-  transition: all 0.5s;
   background: #0f0f0f;
 }
 
@@ -52,12 +49,11 @@ h6 {
   font-weight: 700;
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
+  transition: color 0.3s ease;
 }
 
-#header .logo h1 a,
-#header .logo h1 a:hover {
+#header .logo h1 a {
   color: #fff;
-  text-decoration: none;
 }
 
 #header .logo img {
@@ -73,9 +69,6 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
 .navbar {
   padding: 0;
 }
@@ -104,7 +97,7 @@ h6 {
   color: #fff;
   text-transform: uppercase;
   white-space: nowrap;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .navbar a i,
@@ -128,11 +121,11 @@ h6 {
   margin-left: 30px;
   border-radius: 4px;
   color: #fff;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
   background: #9bc761;
 }
 
@@ -148,7 +141,7 @@ h6 {
   visibility: hidden;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
+  transition: opacity 0.3s ease, top 0.3s ease, visibility 0.3s;
   border-radius: 4px;
 }
 
@@ -203,16 +196,16 @@ h6 {
   }
 }
 
-/**
-* Mobile Navigation 
-*/
+/*--------------------------------------------------------------
+# Mobile Navigation
+--------------------------------------------------------------*/
 .mobile-nav-toggle {
   color: #fff;
   font-size: 28px;
   cursor: pointer;
   display: none;
   line-height: 0;
-  transition: 0.5s;
+  transition: color 0.3s ease;
 }
 
 @media (max-width: 991px) {
@@ -318,6 +311,7 @@ h6 {
   background: url("../img/liver8.jpg") top center;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 #hero:before {
@@ -342,6 +336,14 @@ h6 {
   flex-direction: column;
   text-align: center;
   padding: 0 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#hero:hover .hero-container {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #hero h1 {
@@ -350,6 +352,17 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
+  transition: color 0.3s ease;
+  animation: floating 3s ease-in-out infinite alternate;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 #hero h2 {
@@ -375,6 +388,31 @@ h6 {
 #hero .btn-get-started:hover {
   background: #8fc04e;
 }
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
 
 @media (min-width: 1024px) {
   #hero {
