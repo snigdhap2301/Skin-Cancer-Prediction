@@ -43,6 +43,7 @@ This project was a collaborative effort by a team of dedicated individuals, incl
 - [Sanskar Sinha](https://github.com/sanskar9067)
 - [Abhishek Kumar](https://github.com/AbhishekKumar4543)
 - [Aviral Pandey](https://github.com/Aviralpandey26)
+- [Munish Thakur](https://github.com/Munish28)
 
 ## Requirements
 
