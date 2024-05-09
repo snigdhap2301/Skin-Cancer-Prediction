@@ -1,17 +1,9 @@
-/**
-* Template Name: UpConstruction
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Updated: May 05 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-(function() {
+
+(function () {
   "use strict";
 
-  /**
-   * Apply .scrolled class to the body as the page is scrolled down
-   */
+
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
@@ -22,9 +14,6 @@
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
-  /**
-   * Mobile nav toggle
-   */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
   function mobileNavToogle() {
@@ -34,9 +23,6 @@
   }
   mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
       if (document.querySelector('.mobile-nav-active')) {
@@ -46,11 +32,9 @@
 
   });
 
-  /**
-   * Toggle mobile nav dropdowns
-   */
+
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+    navmenu.addEventListener('click', function (e) {
       if (document.querySelector('.mobile-nav-active')) {
         e.preventDefault();
         this.parentNode.classList.toggle('active');
@@ -60,9 +44,7 @@
     });
   });
 
-  /**
-   * Preloader
-   */
+
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
@@ -70,9 +52,7 @@
     });
   }
 
-  /**
-   * Scroll top button
-   */
+
   let scrollTop = document.querySelector('.scroll-top');
 
   function toggleScrollTop() {
@@ -91,9 +71,7 @@
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
 
-  /**
-   * Animation on scroll function and init
-   */
+
   function aosInit() {
     AOS.init({
       duration: 600,
@@ -104,23 +82,18 @@
   }
   window.addEventListener('load', aosInit);
 
-  /**
-   * Initiate glightbox
-   */
+
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
 
-  /**
-   * Init isotope layout and filters
-   */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+  document.querySelectorAll('.isotope-layout').forEach(function (isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
     let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function () {
       initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
         itemSelector: '.isotope-item',
         layoutMode: layout,
@@ -129,8 +102,8 @@
       });
     });
 
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
+    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function (filters) {
+      filters.addEventListener('click', function () {
         isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
         this.classList.add('filter-active');
         initIsotope.arrange({
@@ -144,20 +117,16 @@
 
   });
 
-  /**
-   * Init swiper sliders
-   */
+
   function initSwiper() {
-    document.querySelectorAll('.swiper').forEach(function(swiper) {
+    document.querySelectorAll('.swiper').forEach(function (swiper) {
       let config = JSON.parse(swiper.querySelector('.swiper-config').innerHTML.trim());
       new Swiper(swiper, config);
     });
   }
   window.addEventListener('load', initSwiper);
 
-  /**
-   * Initiate Pure Counter
-   */
+
   new PureCounter();
 
 })();
