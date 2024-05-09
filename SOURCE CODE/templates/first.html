@@ -4,78 +4,171 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Skin Cancer Prediction Using Deep Learning 
-    Techniques</title>
+  <title>Index - UpConstruction Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
- 
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Vendor CSS Files -->
-  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
   <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="../static/assets/css/styles.css" rel="stylesheet">
+  <link href="../static/assets/css/main.css" rel="stylesheet">
 
-  
 </head>
 
-<body>
+<body class="index-page">
 
-  
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html">Skin Cancer</a></h1>
+      <a href="index.html" class="logo d-flex align-items-center">
+
+        <h1 class="sitename">Lesion Lens</h1> <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{{url_for('first')}}">Home</a></li>
+          <li><a href="{{url_for('login')}}">Login</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="hero section">
+      <div class="info d-flex align-items-center">
+        <div class="container">
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6 text-center">
+              <h2 class="">Welcome to Lesion Lens</h2>
+              <p>Introducing our cutting-edge skin cancer prediction system powered by deep learning technology. Our
+                platform utilizes advanced convolutional neural networks (CNNs) to analyze dermatoscopic images,
+                enabling early detection of potential cancerous lesions. Join us in revolutionizing healthcare with
+                AI-driven solutions for improved diagnostics and patient outcomes.</p>
+              <a href="{{url_for('login')}} " class="btn-get-started">Get Started</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="{{ url_for('first')}}">Home</a></li>
-          <li><a class="nav-link scrollto" href="{{ url_for('login')}}">Login</a></li>
-    
-           
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      <div id="section-fqREP4OWmC-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
+        <div class="carousel-item active">
+          <img src="https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg" alt="">
+        </div>
+
+      </div>
+
+    </section>
+    <section id="alt-services" class="alt-services section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img
+              src="https://www.citizenshospitals.com/static/uploads/ced2b2a6-d6d6-48f3-84b1-66e9d0fb0bf5-1699021087971.jpg"
+              alt=""></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <h3>What is Skin Cancer?</h3>
+            <p>Skin cancer is a type of cancer that develops from the skin cells. There are several types of skin
+              cancer, with the most common ones being:</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+
+              <div>
+                <h4>Basal Cell Carcinoma (BCC):</h4>
+                <p>This is the most common type of skin cancer. It typically appears as a shiny, pink or red bump, or as
+                  a scaly patch that may be brown or flesh-colored. BCC usually grows slowly and rarely spreads to other
+                  parts of the body.</p>
+              </div>
+            </div>
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+
+              <div>
+                <h4>Squamous Cell Carcinoma (SCC):</h4>
+                <p>SCC is the second most common type of skin cancer. It often appears as a firm, red nodule or a flat
+                  lesion with a scaly or crusty surface. SCC can grow and spread if not treated early.</p>
+              </div>
+            </div>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+
+              <div>
+                <h4>Melanoma:</h4>
+                <p>Melanoma is less common but more dangerous than basal cell and squamous cell skin cancers. It can
+                  develop from moles or appear as a new dark spot on the skin. Melanoma can spread quickly to other
+                  parts of the body if not detected and treated early.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Lesion Lens</span>
+          </a>
+        </div>
+
+      </div>
     </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
-      <h1>Skin Cancer Prediction Using </h1>
-      <h2>Deep Learning 
-        Techniques</h2>
-     
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Lesion Lens</strong> <span>All Rights
+          Reserved</span>
+      </p>
     </div>
-  </section> 
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="../static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../static/assets/vendor/aos/aos.js"></script>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+
   <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/assets/vendor/aos/aos.js"></script>
   <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
-  <!-- Template Main JS File -->
+
   <script src="../static/assets/js/main.js"></script>
 
 </body>

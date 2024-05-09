@@ -2,221 +2,187 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contact - UpConstruction Bootstrap Template</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <title>Skin Cancer Prediction Using Deep Learning 
-    Techniques</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="../static/assets/img/favicon.png" rel="icon">
+    <link href="../static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Vendor CSS Files -->
-  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="../static/assets/css/login.css" rel="stylesheet">
 
-  
+    <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+    <link href="../static/assets/css/main.css" rel="stylesheet">
+
+
 </head>
 
-<body>
+<body class="contact-page">
 
-  
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
 
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html">Skin Cancer</a></h1>
-        
-      </div>
+                <h1 class="sitename">Lesion Lens</h1> <span>.</span>
+            </a>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="{{ url_for('first')}}">Home</a></li>
-          <li><a class="nav-link scrollto" href="{{ url_for('login')}}">Login</a></li>
-         
-        
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="{{url_for('first')}}">Home</a></li>
+                    <li><a href="{{url_for('login')}}">Login</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
 
-    </div>
-  </header><!-- End Header -->
+        </div>
+    </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
-      
-      <h2>Skin Cancer Prediction</h2>
-       
-    </div>
-  </section><!-- End Hero -->
+    <main class="main">
 
-  <main id="main">
-     
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
+        <div class="page-title" data-aos="fade"
+            style="background-image: url(https://barraesthetics.com/wp-content/uploads/2021/06/PSX_20210608_150247.jpg);">
+            <div class="container position-relative">
+                <h1>Login</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="{{url_for('first')}}">Home</a></li>
+                        <li class="current">Login</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <section id="contact" class="contact section">
 
-        <div class="section-title" data-aos="zoom-in">
-          <h3>Skin Cancer <span>Prediction in Deep Learning</span></h3>
-          <h2>Login</h2>
-         
-         
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+
+                <div class="row gy-4 mt-1">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <img src="https://assets-global.website-files.com/60658b47b03f0c77e8c14884/630d7b2da3b2846da3fe1afa_web-app-guide.png"
+                            frameborder="0" style="border:0; width: 100%; height: 400px;" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></img>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+                            <center>
+                                <h1 class="m-4">Login To Lesion Lens</h1>
+                            </center>
+                            <div class="row gy-4 mt-4">
+
+                                <div class="col-md-12">
+                                    <input type="text" name="name" id="uname" class="form-control"
+                                        placeholder="Username" required="">
+                                </div>
+
+
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" id="pwd" name="subject"
+                                        placeholder="Password" required="">
+                                </div>
+                                <div class="col-md-12 text-center">
+
+                                    <button type="submit" class="btn btn-warning" onclick="login()">Login</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">Lesion Lens</span>
+                    </a>
+                </div>
+
+            </div>
         </div>
 
-        
-        <head>
-
-        
-         
-	
-          <script>
-         addEventListener("load", function () {
-             setTimeout(hideURLbar, 0);
-         }, false);
- 
-         function hideURLbar() {
-             window.scrollTo(0, 1);
-         }
- 
-         function login(){
-         var uname = document.getElementById("uname").value;
-         var pwd = document.getElementById("pwd").value;
- 
-     if(uname == "admin" && pwd == "admin")
-     {
-       alert("Login Success!");
-       
-       window.location = "{{url_for('index')}}";
-       return false;
-     }
-     else
-     {
-     alert("Invalid Credentials!")
-     }
-         }
-         
-           
- 
- 
-  
-     </script>
-     
- </head>
-  
-  <body id="page-top">
- 
-    
-       
- 
-   <!-- Portfolio Section -->
-   <section class="page-section portfolio" id="portfolio">
-       <!-- Portfolio Grid Items -->
-       <div class="row">
-        <div class="section-header">
-          <h2></h2>
-         
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Lesion Lens</strong> <span>All Rights
+                    Reserved</span>
+            </p>
         </div>
-         <div class="col-md-6 col-lg-4" style="margin-left:390px">
-          <div class="control-group">
-                   <!-- Username -->
-                   <br>
-                  <br>
-                 
-                   <label class="control-label"   for="username"><b>Username</b></label>
-                   <div class="controls">
-                     <input type="text" id="uname" name="uname" placeholder="" class="form-control">
-                    
-                   </div>
-                 </div>
-                 <br>
-                 <br>
-                 
-                 <div class="control-group">
-                   <!-- Password-->
-                   
-                   <label class="control-label"  for="password"><b>Password</b></label>
-                   <div class="controls">
-                     <input type="password" id="pwd" name="pwd" placeholder="" class="form-control">
-                   
-                   </div>
-                 </div>
-                
-                 <div class="control-group">
-                   <!-- Button -->
-                   
-                   <div class="controls">
-                    <br>
-                   <br>
-                   <br>
-                     <input type="button" class="btn btn-primary" value="Login" style="margin-left: 150px" onclick="login()">
-                   
-                   </div>
-                 </div>
-                  </div>
-   </div>
-   </div>
-  
-  
-   </section>
- 
- 
-   
- 
-     </body>	 
-		
-		
-		
-		
-		
-		
-		
-		
 
-      </div>
-    </section><!-- End Portfolio Section -->
-     
-  <footer id="footer">
+    </footer>
 
-    <div class="footer-top">
 
-      <div class="container">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-        
-         
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
 
-      </div>
-    </div>
+        function login() {
+            var uname = document.getElementById("uname").value;
+            var pwd = document.getElementById("pwd").value;
 
-    <div class="container footer-bottom clearfix">
-      
-    </div>
-  </footer><!-- End Footer -->
+            if (uname == "admin" && pwd == "admin") {
+                alert("Login Success!");
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+                window.location = "{{url_for('index')}}";
+                return false;
+            }
+            else {
+                alert("Invalid Credentials!")
+            }
+        }
 
-  <!-- Vendor JS Files -->
-  <script src="../static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../static/assets/vendor/aos/aos.js"></script>
-  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="../static/assets/js/main.js"></script>
+
+
+
+    </script>
+
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+
+    <div id="preloader"></div>
+
+    <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+    <script src="../static/assets/vendor/aos/aos.js"></script>
+    <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+
+    <script src="../static/assets/js/main.js"></script>
 
 </body>
 

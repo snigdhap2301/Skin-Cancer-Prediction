@@ -4,182 +4,168 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Skin Cancer Prediction Using Deep Learning 
-    Techniques</title>
+  <title>Contact - UpConstruction Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/assets/img/favicon.png" rel="icon">
+  <link href="../static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
   <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../static/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="../static/assets/css/style.css" rel="stylesheet">
+
+  <link href="../static/assets/css/main.css" rel="stylesheet">
+
 
 </head>
 
-<body>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
+<body class="contact-page">
 
-      <div class="logo">
-        <h1 class="text-light"><a href="index.html">Skin Cancer</a></h1>
-      </div>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <nav id="navbar" class="navbar">
+      <a href="index.html" class="logo d-flex align-items-center">
+
+        <h1 class="sitename">Lesion Lens</h1> <span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a class="nav-link scrollto" href="{{ url_for('first')}}">Home</a></li>
-          <li><a class="nav-link scrollto" href="login.html">Login</a></li>
-          <li><a class="nav-link scrollto active" href="index.html">Preview</a></li>
-          
-
+          <li><a href="{{url_for('first')}}">Home</a></li>
+          <li><a href="{{url_for('index')}}">Upload</a></li>
+          <li><a href="{{url_for('first')}}">Logout</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
-      
-      <h2>Skin Cancer Prediction</h2>
-       
+  <main class="main">
+
+    <div class="page-title" data-aos="fade"
+      style="background-image: url(https://images.tv9hindi.com/wp-content/uploads/2024/01/colon-cancer.jpg);">
+      <div class="container position-relative">
+        <h1>Upload</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{{url_for('first')}}">Home</a></li>
+            <li><a href="{{url_for('login')}}">Login</a></li>
+            <li class="current">Upload</li>
+          </ol>
+        </nav>
+      </div>
     </div>
-  </section><!-- End Hero -->
 
-  <main id="main">
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
+    <section id="services" class="services section">
 
-        <div class="section-title" data-aos="zoom-in">
-          <h3>Skin Cancer <span>Prediction in Deep Learning</span></h3>
-          <h2>Preview</h2>
-         
-         
+      <div class="container-fluid">
+
+        <div class=" row gy-4 d-flex justify-content-center">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-upload"></i></i>
+              </div>
+              <h3>Upload the Image:</h3>
+              <form class="login100-form validate-form" action="/submit" method="POST" enctype="multipart/form-data">
+
+                <div class="mb-3">
+                  <input class="form-control input100" name="my_image" id="imagefile" type="file" id="formFile"
+                    accept="image/*" onchange="previewImage();" required="">
+                  <img id="preview"
+                    style="margin-top: 10px; display: none; margin-left: auto; margin-right: auto; max-height: 200px">
+                  <div class="container-login100-form-btn f-flex justify-content-center">
+
+                    <button class="btn btn-warning mt-3" type="submit">Submit</button>
+                  </div>
+                </div>
+
+            </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Lesion Lens</span>
+          </a>
         </div>
 
-        
-        <head>
-          <script>
-     function previewImage() {
-         var file = document.getElementById("imagefile").files;
-         if (file.length > 0) {
-             var fileReader = new FileReader();
-  
-             fileReader.onload = function (event) {
-                 document.getElementById("preview").setAttribute("src", event.target.result);
-             };
-  
-             fileReader.readAsDataURL(file[0]);
-         }
-     }
- </script>
- </head>
-<center>
- <body>
-   <div class="section-header">
-     <h2></h2>
-    
-   </div>
-   <nav class="root navbar navbar-default navbar-fixed-top">
-     <div class="container-fluid row">
-       <div class="navbar-header col-md-1 col-sm-1">
-            
-       </div>
-       
-       
-     </div>
-   </nav>
-  
-
-   <div class="limiter">
-     <div class="container-login100" style="background-image: url(../static/img/background1.jpg); background-size: fill;">
-       <div class="wrap-login100">
-         <div class="login100-form-title" style=" background-image: url(../static/img/background2.jpg);">
-      
-     
-           <span class="login100-form-title-1">
-             Upload Image:
-           </span>
-       
-         </div>
- </br>
-     </br>
-         <form class="login100-form validate-form" action="/submit" method="POST" enctype="multipart/form-data">
-           <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-       <br>
-             <input class="input100" type="file" name="my_image" id="imagefile" class="btn" accept="image/*" onchange="previewImage();"  required>
-    
-           </div>
-     
-     <img id="preview">
-           <div class="container-login100-form-btn">
-       </br>
-       </br>
-             <button class="btn btn-primary" type="submit"> Submit </button>
-           </div>
-         </form>
-       </div>
-     </div>
- 
-         </div>
-   </div> 
- 
-    
- </body>
-		
-		
-		
-		
-		
-		
-		
-		
-
-      </div>
-    </section><!-- End Portfolio Section -->
-     
-  <footer id="footer">
-
-    <div class="footer-top">
-
-      <div class="container">
-
-        
-         
-
       </div>
     </div>
 
-    <div class="container footer-bottom clearfix">
-      
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Lesion Lens</strong> <span>All Rights
+          Reserved</span>
+      </p>
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="../static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="../static/assets/vendor/aos/aos.js"></script>
+
+
+
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <div id="preloader"></div>
+
+  <script>
+    function previewImage() {
+      var file = document.getElementById("imagefile").files;
+      if (file.length > 0) {
+        var fileReader = new FileReader();
+
+        fileReader.onload = function (event) {
+          var previewImage = document.getElementById("preview");
+          previewImage.style.display = "block";
+          previewImage.setAttribute("src", event.target.result);
+        };
+
+        fileReader.readAsDataURL(file[0]);
+      }
+    }
+
+  </script>
+
   <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/assets/vendor/aos/aos.js"></script>
   <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
-  <!-- Template Main JS File -->
+
   <script src="../static/assets/js/main.js"></script>
 
 </body>
