@@ -44,6 +44,7 @@ This project was a collaborative effort by a team of dedicated individuals, incl
 - [Abhishek Kumar](https://github.com/AbhishekKumar4543)
 - [Aviral Pandey](https://github.com/Aviralpandey26)
 - [Munish Thakur](https://github.com/Munish28)
+- [Harsh Pratap Singh](https://github.com/ihharsh)
 
 ## Requirements
 
