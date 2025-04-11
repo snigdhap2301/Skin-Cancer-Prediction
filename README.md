@@ -36,6 +36,7 @@ Through model training and evaluation, we achieved an accuracy of 97.56% in pred
 
 This project was a collaborative effort by a team of dedicated individuals, including:
 
+- [Snigdha Pandey](https://github.com/snigdhap2301)
 - [Ansh Prakash](https://github.com/anshprakash6397)
 - [Tanisha Chandani](https://github.com/tanishachandani)
 - [AmulGupta](https://github.com/Amulgupta)
